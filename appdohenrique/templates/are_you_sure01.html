@@ -1,0 +1,8 @@
+Voce tem certeza que deseja remover o item"{{things.title}}"?
+
+
+<form method= "post">
+  {% csrf_token %}
+<input type="submit" name = "confirm" value = "Sim">
+<input type="submit" value = "Não">
+</form>

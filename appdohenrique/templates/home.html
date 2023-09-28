@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html>
+
+  
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HENRIQUE CONTI</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+
+    
+   
+  <h1>Top 5 jogos favoritos</h1>
+  <h2>Vou comentar um pouco e fazer uma tabela dos meus top 5 jogos favoritos </h2>
+  <h3>Escolhido por <b style="color:red"><u> Henrique Conti</u></b></h3>
+
+
+
+   <h2>Lista de Jogos</h2> 
+ <ol>
+   {% for el in jogos %}
+    <li>
+      {{el.title}} 
+      <a href="/jogos/update/{{el.id}}">Atualizar<a/>
+      <a href="/jogos/delete/{{el.id}}">Remover<a/> 
+      
+    </li>
+   
+   {% endfor %}
+   <a href="/jogos">Adicionar Novo Jogo </a>
+ </ol>
+<h2>Lista de Coisas que Gosto</h2> 
+   <ul>
+   {% for el in things %}
+    <li>
+      {{el.title}} 
+      <a href="/things/update/{{el.id}}">Atualizar<a/>
+      <a href="/things/delete/{{el.id}}">Remover<a/>
+    </li>
+    
+   {% endfor %}
+   <a href="/things">Adicionar Nova Atividade Que Gosto</a>
+   </ul>
+  
+
+ 
+    
+  <div class="blue-center" >
+  <img src="https://cibersistemas.pt/wp-content/uploads/2021/10/Jogos-Online-para-PC.jpg" width="500" > 
+  </div>
+
+  <br/>
+
+  <table border="1" class="blue-center">
+    <tr> <th>Nome</th> <th>Data de Lançmento</th> <th>Custo</th> </tr>
+    <tr> <td>Planet Zoo</td> <td>2019</td> <td>R$100,00</td> </tr>
+    <tr> <td>Hades</td> <td>2020</td> <td>R$73,99</td> </tr>
+    <tr> <td>League of Legends</td> <td>2009</td> <td>R$0,00</td> </tr>
+    <tr> <td>Red Dead Redmption 2</td> <td>2019</td> <td>R$299,90</td> </tr>
+    <tr> <td>Grand Theft Auto V</td> <td>2015</td> <td>R$82,41</td> </tr>
+  </table>
+
+  <h2> <i>Planet Zoo</i></h2>
+
+  <p> Apesar de não ser muito conhecido é meu jogo favorito porque envolve contruçãoo livre e avancada e animais que é uma das minha paixões.No jogo você consegue construir habitates,restaurantes,entradas,florestas e muito mais.Sendo tudo muito intuitivo e não só os visitantes que interagem com as construções mas os animais tambem,mudando drasticamente de comportamento entre oque for construir para eles. </p>
+
+  <div class="z">
+  <img width="500" src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/y50ak4axz9pximciumve.jpg"> 
+    </div>
+
+  <h2> <i>Hades</i></h2>
+
+  <p> É um jogo roguelike RPG de ação,aonde seu objetivo final é matar Hades 10 vezes.Para chegar até Hades já é um desafio,cheio de salas aonde precisa derrotar varios inimigos e bosses,recolhendo recompensas que vão melhorando seu personagem.você começa do inicio.Porém cada vez que voê morre recomessa todas as salas do início.Mas oque faz ele ser especial é a historia que acompanha voce pela jornada, a ação que é espetacular, e todos os personagens e interrações que parece </p>
+
+  <div class="h">
+  <img width="500" src="https://cdn1.epicgames.com/min/offer/2560x1440-2560x1440-5e710b93049cbd2125cf0261dcfbf943.jpg"> 
+    </div>
+
+ <h2> <i>League of Legends</i></h2>
+
+  <p> League of Legends é um dos jogos mais conhecidos e com maior uma das maiores longevidades.É um jogo multiplayer que vem sendo atualizado desde 2009, quando foi criado.Parte de seu sucesso vem de mais de 140  personagens diferentes que podem ser escolhidos,sendo que cada partida são jogadas por 2 times de 5 jogadores. Então a combinação entre os diferentes personagens é enorme, tornando cada partida difrente da ultima.   </p>
+
+  <div class="d">
+  <img width="500" src="https://blog.atacadogames.com/wp-content/uploads/2023/05/lol-2.jpg"> 
+    </div>
+
+  <h2> <i>Red Dead Redmption 2</i></h2>
+
+  <p> Red Dead Redmption 2 é um jogo muito famoso por sua história incrivel e seu mundo enorme "open world" cheio de lugares para serem descobertos. Uma garnde parte do jogo é sua imersão,com garficos lindos e historias tão bem feitas que te faz achar que está dentro desse mundo.   </p>
+
+  <div class="p">
+  <img width="500" src="https://static1-br.millenium.gg/articles/7/12/08/7/@/137865-red-dead-redemption-2-divulgacao-article_cover_bd-1.jpg"> 
+    </div>
+
+   <h2> <i>Grand Theft Auto V</i></h2>
+
+  <p> Grand Theft Auto V,mais coinhecido como GTA V,foi o jogo que mais vendeu copias de todos os tempos, somando mais de 140 milhões de cópias.O jogo é extremamente divertido, pois o mapa é quase uma replica de Los Angeles, e de todas as coisas que conhece fazer como comprar casas,carros,barcos e etc,tentando dar a sensacao de uma vida real dentro do jogo.  </p>
+
+  <div class="c">
+  <img width="500" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1678296348"> 
+    </div>
+  
+  <h2> <i>Links para os trailers</i></h2>
+
+  <table border="1" class="blue-center">
+    <tr> <th>Nome</th> <th>Trailer</th> </tr>
+    <tr> <td>Planet Zoo</td> <td><a href="https://www.youtube.com/watch?v=TAvzq-HrSoQ" target="_blank">Trailer Planet Zoo</a></td> </tr>
+    <tr> <td>Hades</td> <td><a href="https://www.youtube.com/watch?v=91t0ha9x0AE" target="_blank">Trailer Hades</a></td> </tr>
+    <tr> <td>League of Legends</td> <td><a href="https://www.youtube.com/watch?v=0Ni4Rwm13y0" target="_blank">Trailer League of Legends</a></td> </tr>
+    <tr> <td>Red Dead Redmption 2</td> <td><a href="https://www.youtube.com/watch?v=WDvFz2LL1WI" target="_blank">Trailer Red Dead Redmption 2</a></td> </tr>
+    <tr> <td>Grand Theft Auto V</td> <td><a href="https://www.youtube.com/watch?v=QkkoHAzjnUs" target="_blank">Trailer Grand Theft Auto V</a></td> </tr>
+  </table>
+
+
+<br/>
+  
+</body>
+
+</html>
