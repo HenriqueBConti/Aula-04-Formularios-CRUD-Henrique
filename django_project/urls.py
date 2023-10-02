@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from appdohenrique import views
 
 urlpatterns = [
@@ -26,4 +27,5 @@ urlpatterns = [
   path('things/update/<id>',views.update_things),
   path('things/delete/<id>',views.delete_things),
   path('admin/', admin.site.urls)
+
 ]
